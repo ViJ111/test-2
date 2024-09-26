@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/showroom.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/goat room 1.unity
+    guid: e63bc34d76feab54bb490db6c7a105d3
+  - enabled: 1
+    path: Assets/Scenes/origami room 2.unity
+    guid: a97e02f5ed3eb264cbec373ba71f6e08
+  - enabled: 0
+    path: Assets/Scenes/3.unity
+    guid: 4ca7699447765bb4597c428d0dd76ab3
   m_configObjects: {}
