@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
     KeyCode spawnKey = KeyCode.G;       // User-defined keyboard input
 
     [SerializeField, Range(1f, 50f)]
-    float spawnRange = 5f;              // User-defined range for spawning
+    float spawnRange = 10;             // User-defined range for spawning
 
     /* What else do we need as user-defined inputs? 
      * And do we need a Start() function?
@@ -20,6 +20,8 @@ public class Spawner : MonoBehaviour
 
     // Your code here
 
+    [SerializeField]
+        GameObject spawnPrefab;
 
 
     // Update is called once per frame
@@ -30,6 +32,17 @@ public class Spawner : MonoBehaviour
          */
 
         // Your code here
+        if (Input.GetKeyDown(spawnKey))
+        {
+            GameObject obj = Instantiate(spawnPrefab);
+
+            obj.transform.position = new Vector3(
+                Random.Range(-spawnRange, spawnRange),
+                Random.Range(0f, spawnRange),
+                Random.Range(-spawnRange, spawnRange)
+
+                );
+        }
 
     }
 }
